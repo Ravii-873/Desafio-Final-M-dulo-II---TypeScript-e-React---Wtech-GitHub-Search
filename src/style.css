@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@theme {
+    --color-shdw: #B4B4B4;
+
+    --color-wtech-blue: #05478A;
+    --color-wtech-blue-off: #05478A60;
+    --color-main-bg: #ECEEF5;
+    --color-form-border: #B5B5B5;
+    --color-toast-bg: #FC8621;
+    --color-toast-circle-bg: #C24914;
+    --color-toast-btn-bg: #F6F4F430;
+    --color-spinner-color: #0070E0;
+    --color-loading-span: #303030;
+    --color-user-h1: #333333;
+    --color-user-card-border: #E3E7EB;
+    --color-user-info-text: #2D2D2D;
+    --color-pagination-count: #6A6F73;
+    --color-pagination-btn-enabled: #575759;
+    --color-pagination-btn-disabled: #C4C4C4;
+    --color-repo-card-hr: #0070E0;
+    --color-repo-li-bg: #F7F7F7;
+    --color-repo-li-content: #202E49;
+    --color-modal-stroke: #BDBDBD;
+}
+
+.circle {
+    position: absolute;
+    background-color: var(--color-toast-circle-bg);
+    border-radius: calc(infinity * 1px);
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.font-error-message {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}

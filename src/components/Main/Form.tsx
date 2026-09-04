@@ -61,11 +61,9 @@ function Form() {
               />
               {/* Inline error for unfilled field */}
               <div className="flex h-5.25 items-baseline">
-                {errors.name && (
-                  <p className="font-error-message text-[14px] text-red-400">
-                    {errors.userName?.message as string}
-                  </p>
-                )}
+                <p className="font-error-message text-[14px] text-red-400">
+                  {errors.userName?.message as string}
+                </p>
               </div>
             </div>
             <button
